@@ -1,4 +1,4 @@
-package com.cb.io.filevisitor;
+package com.cb.nio.filevisitor;
 
 import java.io.IOException;
 import java.nio.file.*;

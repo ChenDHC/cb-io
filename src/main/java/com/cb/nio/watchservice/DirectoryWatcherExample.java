@@ -1,4 +1,4 @@
-package com.cb.io.watchservice;
+package com.cb.nio.watchservice;
 
 import java.io.IOException;
 import java.nio.file.*;
