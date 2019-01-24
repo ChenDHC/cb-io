@@ -1,12 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.turing.spider</groupId>
-    <artifactId>turing-spider</artifactId>
+    <groupId>com.cb.io</groupId>
+    <artifactId>cb-io</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>turing-spider Maven Webapp</name>
-    <url>http://maven.apache.org</url>
     <dependencies>
         <!-- mysql -->
         <dependency>
@@ -139,27 +137,6 @@
             <artifactId>jython</artifactId>
             <version>2.7.0</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.hankcs</groupId>-->
-            <!--<artifactId>hanlp</artifactId>-->
-            <!--<version>portable-1.2.8</version>-->
-        <!--</dependency>-->
-        <!-- 本地分词 -->
-        <!--<dependency>-->
-            <!--<groupId>com.tuling.nlp</groupId>-->
-            <!--<artifactId>nlp-fudan</artifactId>-->
-            <!--<version>1.1-SNAPSHOT</version>-->
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>com.hankcs</groupId>-->
-                    <!--<artifactId>hanlp</artifactId>-->
-                <!--</exclusion>-->
-                <!--<exclusion>-->
-                    <!--<groupId>com.turing.nlp</groupId>-->
-                    <!--<artifactId>nlp-hanlp</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-        <!--</dependency>-->
         <!-- 阿里熔断 -->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
@@ -174,7 +151,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>turing-spider</finalName>
+        <finalName>cb-io</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
