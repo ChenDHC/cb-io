@@ -7,7 +7,6 @@ import java.nio.file.*;
  * 通过WatchService 监控目录下文件的变化
  */
 public class DirectoryWatcherExample {
- 
     public static void main(String[] args) throws InterruptedException, IOException {
         WatchService watchService
           = FileSystems.getDefault().newWatchService();
