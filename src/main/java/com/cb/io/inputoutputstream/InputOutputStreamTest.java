@@ -1,5 +1,7 @@
 package com.cb.io.inputoutputstream;
 
+import com.cb.constant.FileConstant;
+
 import java.io.*;
 
 /**
@@ -9,12 +11,11 @@ import java.io.*;
  * @since
  */
 public class InputOutputStreamTest {
-    private static final String IN_PATH = "Q:\\in.txt";
-    private static final String OUT_PATH = "Q:\\out.txt";
+
     public static void main(String[] args) throws IOException {
         try(
-                InputStream inputStream = new FileInputStream(IN_PATH);
-                OutputStream outputStream = new FileOutputStream(OUT_PATH,true);
+                InputStream inputStream = new FileInputStream(FileConstant.IN_PATH);
+                OutputStream outputStream = new FileOutputStream(FileConstant.OUT_PATH,true);
         ){
             byte[] data = new byte[1];
             int index = inputStream.read(data);

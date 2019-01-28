@@ -26,14 +26,6 @@ public class PipeTest {
             }
         });
 
-//        Thread thread1 = new Thread(() -> {
-//            try{
-//                pipedOutputStream.write("hello world, pipe!".getBytes());
-//            }catch (IOException e){
-//                e.printStackTrace();
-//            }
-//        });
-
         threadPoolExecutor2.execute(() -> {
             try{
                 int data = pipedInputStream.read();
@@ -45,21 +37,6 @@ public class PipeTest {
                 e.printStackTrace();
             }
         });
-//        Thread thread2 = new Thread(() -> {
-//            try{
-//                int data = pipedInputStream.read();
-//                while(data != -1){
-//                    System.out.println((char) data);
-//                    data = pipedInputStream.read();
-//                }
-//            }catch (IOException e){
-//                e.printStackTrace();
-//            }
-//        });
-//        thread1.start();
-//        thread2.start();
-//        threadPoolExecutor1.shutdown();
-//        threadPoolExecutor2.shutdown();
         threadPoolExecutor2.shutdown();
         while (true){
             if(threadPoolExecutor2.isTerminated()){
